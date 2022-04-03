@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		1AA9C823FA3640CBAD5F27E7 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A9DD6782E449D69B8A0132 /* CDVStatusBar.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1F10E30FE71A413C9C272E7E /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 836F19FE6BA44BEAAD1192B7 /* CDVVibration.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		661AD3E9DD8349B59B1BB43D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29D620A619E44E0B52CAD0B /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		EB9E2CBF1B5B442E9F797B42 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C85142ADA24A819D8EB91E /* CDVVibration.m */; };
+		C562D723698F44BBBC3D6FE6 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AC53886A64C57BDF27574 /* CDVStatusBar.m */; };
+		C75E03B607B54BA18610C21F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3506A41995E34CF0861D0213 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,6 @@
 
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LD50/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		0B52CC7CCEB649E3A4EF947C /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
-		14A9DD6782E449D69B8A0132 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* LD50.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LD50.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,11 +58,13 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* LD50-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LD50-Prefix.pch"; sourceTree = "<group>"; };
-		48C85142ADA24A819D8EB91E /* CDVVibration.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVVibration.m; path = "cordova-plugin-vibration/CDVVibration.m"; sourceTree = "<group>"; };
+		3506A41995E34CF0861D0213 /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		625AC53886A64C57BDF27574 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = LD50/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		6B7A150340954D6FBD5209B9 /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
+		836F19FE6BA44BEAAD1192B7 /* CDVVibration.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVVibration.m; path = "cordova-plugin-vibration/CDVVibration.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* LD50-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "LD50-Info.plist"; path = "LD50/LD50-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		B53A015CECC94DD78017ADB8 /* CDVVibration.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVVibration.h; path = "cordova-plugin-vibration/CDVVibration.h"; sourceTree = "<group>"; };
-		D29D620A619E44E0B52CAD0B /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D4AD2A5DB3324FC1B3134002 /* CDVVibration.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVVibration.h; path = "cordova-plugin-vibration/CDVVibration.h"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				661AD3E9DD8349B59B1BB43D /* AudioToolbox.framework in Frameworks */,
+				C75E03B607B54BA18610C21F /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D29D620A619E44E0B52CAD0B /* AudioToolbox.framework */,
+				3506A41995E34CF0861D0213 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,10 +175,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				48C85142ADA24A819D8EB91E /* CDVVibration.m */,
-				B53A015CECC94DD78017ADB8 /* CDVVibration.h */,
-				14A9DD6782E449D69B8A0132 /* CDVStatusBar.m */,
-				0B52CC7CCEB649E3A4EF947C /* CDVStatusBar.h */,
+				836F19FE6BA44BEAAD1192B7 /* CDVVibration.m */,
+				D4AD2A5DB3324FC1B3134002 /* CDVVibration.h */,
+				625AC53886A64C57BDF27574 /* CDVStatusBar.m */,
+				6B7A150340954D6FBD5209B9 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = LD50/Plugins;
@@ -302,8 +302,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				EB9E2CBF1B5B442E9F797B42 /* CDVVibration.m in Sources */,
-				1AA9C823FA3640CBAD5F27E7 /* CDVStatusBar.m in Sources */,
+				1F10E30FE71A413C9C272E7E /* CDVVibration.m in Sources */,
+				C562D723698F44BBBC3D6FE6 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

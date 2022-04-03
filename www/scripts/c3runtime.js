@@ -4259,11 +4259,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Pin,
 		C3.Plugins.Touch,
 		C3.Plugins.Keyboard.Cnds.OnKey,
-		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Behaviors.MoveTo.Acts.SetMaxSpeed,
-		C3.Plugins.Mouse.Cnds.IsButtonDown,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.System.Cnds.LayerVisible,
 		C3.Plugins.Sprite.Acts.SetPos,
@@ -4287,6 +4287,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.AnimationFrame,
 		C3.Plugins.System.Acts.Scroll,
 		C3.Behaviors.MoveTo.Cnds.IsMoving,
+		C3.Plugins.Audio.Acts.SetVolume,
+		C3.Plugins.Audio.Acts.SetPlaybackRate,
+		C3.Behaviors.MoveTo.Exps.MaxSpeed,
 		C3.Behaviors.MoveTo.Cnds.OnArrived,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Mouse.Cnds.OnClick,
@@ -4328,7 +4331,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Tilemap.Exps.Height,
 		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Cnds.ForEach,
-		C3.Plugins.Audio.Acts.SetVolume,
 		C3.Plugins.Audio.Acts.FadeVolume
 	];
 };
@@ -4506,14 +4508,14 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
-		() => 0,
-		() => "",
 		() => "WorldGround",
 		() => -100,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpInstVar();
 		},
+		() => -Infinity,
+		() => "drivingsound",
 		() => 6,
 		() => 7,
 		() => 5,
@@ -4521,6 +4523,7 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
 		},
+		() => 0,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -4557,6 +4560,11 @@ self.C3_ExpressionFuncs = [
 			return () => ((n0.ExpObject() - (n1.ExpInstVar() / 2)) + (n2.ExpInstVar() / 2));
 		},
 		() => "rolling",
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => (n0.ExpBehavior() / n1.ExpBehavior());
+		},
 		() => "still",
 		() => -50,
 		() => "left",
@@ -4611,6 +4619,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + 1);
 		},
+		() => "",
 		() => "Start",
 		() => "... My battery is low ...",
 		() => 4,
@@ -4650,9 +4659,8 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
-		() => -10,
+		() => -15,
 		() => "ambiance",
-		() => -Infinity,
 		() => "bell",
 		() => "drums",
 		() => "bass",
@@ -4665,6 +4673,7 @@ self.C3_ExpressionFuncs = [
 		() => -30,
 		() => 2,
 		() => -20,
+		() => -10,
 		() => -5
 ];
 
