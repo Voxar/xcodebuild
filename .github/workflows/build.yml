@@ -1,3 +1,5 @@
+name: Build "Battery Low"
+on: [push]
 jobs:
   build:
     runs-on: macos-12
